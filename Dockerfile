@@ -15,4 +15,4 @@ RUN python3 -m pip install -r requirements.txt
 ADD . /app
 
 # Using pip:
-CMD ["python3", "wsf-mapping"]
+CMD ["python3", "stream-vessel-locations.py"]
