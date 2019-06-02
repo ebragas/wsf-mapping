@@ -1,1 +1,3 @@
 locations_file: ./data/locations.csv
+api_access_code: eb0b9943-39c5-45cf-85d3-c38805037262
+api_url: http://www.wsdot.wa.gov/ferries/api/vessels/rest/vessellocations

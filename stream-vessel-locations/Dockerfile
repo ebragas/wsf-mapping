@@ -22,3 +22,4 @@ RUN chmod a+x /app/main.py
 
 RUN crontab /app/crontab
 ENTRYPOINT crond -f
+# CMD ["python", "main.py"]
