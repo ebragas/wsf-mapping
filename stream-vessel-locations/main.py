@@ -4,6 +4,7 @@
 and append them to csv file.
 """
 
+import os
 import requests
 import json
 import yaml
@@ -13,6 +14,7 @@ from datetime import datetime
 logging.basicConfig(level=logging.DEBUG)
 
 
+
 if __name__ == "__main__":
 
     # Log start
@@ -20,7 +22,7 @@ if __name__ == "__main__":
     logging.debug("Start time: {}".format(exec_start))
 
     # Read config file
-    with open("config.yaml") as fp:
+    with open(os.path.join(os.path.dirname(__file__), "config.yaml")) as fp:
         config = yaml.load(fp, Loader=yaml.BaseLoader)
 
     
@@ -28,4 +30,4 @@ if __name__ == "__main__":
     # Log end
     exec_end = datetime.now()
     logging.debug("End time: {}".format(exec_end))
-    logging.debug("Execution duration: {}".format(exec_end - exec_start))
+    logging.debug("Duration: {}".format(exec_end - exec_start))
