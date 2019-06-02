@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+
 """Periodically get new vessel locations from the WSF Vessel Locations API endpoint
 and append them to csv file.
 """
